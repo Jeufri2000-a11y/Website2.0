@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -6,7 +7,7 @@
     <title>D Roman House Solution LLC | Remodelación, Demolición & Servicios Generales</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,7 +36,7 @@
     </script>
     <style>
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 64, 175, 0.82) 100%);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 64, 175, 0.85) 100%);
         }
     </style>
 </head>
@@ -87,9 +88,19 @@
         </div>
     </header>
 
-    <!-- Hero Section con Imagen de Fondo -->
+    <!-- Hero Section -->
     <section class="relative bg-slate-900 text-white py-20 lg:py-28 px-4 overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop');"></div>
+        <!-- Fondo Confiable Garantizado -->
+        <div class="absolute inset-0 z-0 bg-slate-950 opacity-90">
+            <svg class="w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
         <div class="absolute inset-0 hero-overlay z-0"></div>
 
         <div class="max-w-7xl mx-auto relative z-10 grid md:grid-cols-12 gap-12 items-center">
@@ -113,7 +124,7 @@
                     </a>
                 </div>
 
-                <!-- Métricas Rápidas -->
+                <!-- Métricas -->
                 <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
                     <div>
                         <span class="block text-2xl lg:text-3xl font-black text-amber-400" data-i18n="stat1Val">+10 Años</span>
@@ -130,7 +141,7 @@
                 </div>
             </div>
 
-            <!-- Formulario Conectado a Formspree -->
+            <!-- Formulario Formspree -->
             <div id="cotizacion" class="md:col-span-5 bg-white text-slate-900 p-8 rounded-2xl shadow-2xl border border-slate-100">
                 <h3 class="text-2xl font-bold text-slate-900 mb-1" data-i18n="formTitle">Solicitud de Presupuesto</h3>
                 <p class="text-xs text-slate-500 mb-6" data-i18n="formSub">Recibirás una confirmación por correo y llamada de nuestro equipo.</p>
@@ -186,7 +197,7 @@
         </div>
     </section>
 
-    <!-- Sección de Servicios Detallados -->
+    <!-- Sección de Servicios -->
     <section id="servicios" class="py-20 max-w-7xl mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <span class="text-amber-600 font-bold text-sm tracking-widest uppercase" data-i18n="secServicesSub">Nuestros Servicios completos</span>
@@ -195,16 +206,13 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
             <!-- Servicio 1: Demolición -->
             <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
                 <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
                     <i class="fa-solid fa-person-digging"></i>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s1Title">Demolición y Restauración</h3>
-                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s1Desc">
-                    Demolición segura de interiores, remoción de gabinetes, pisos, azulejos y estructuras para preparar tus espacios antes de remodelar.
-                </p>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s1Desc">Demolición segura de interiores, remoción de gabinetes, pisos, azulejos y estructuras para preparar tus espacios antes de remodelar.</p>
                 <ul class="text-xs text-slate-500 space-y-1">
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Demolición interior limpia</li>
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Restauración de áreas dañadas</li>
@@ -217,9 +225,7 @@
                     <i class="fa-solid fa-dumpster"></i>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s2Title">Recolección de Basura & Escombros</h3>
-                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s2Desc">
-                    Retiro rápido y profesional de desechos de construcción, basura pesada, muebles viejos y restos de obra.
-                </p>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s2Desc">Retiro rápido y profesional de desechos de construcción, basura pesada, muebles viejos y restos de obra.</p>
                 <ul class="text-xs text-slate-500 space-y-1">
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Limpieza de escombros de obra</li>
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Desalojo de basura pesada</li>
@@ -232,9 +238,7 @@
                     <i class="fa-solid fa-truck-ramp-box"></i>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s3Title">Deliveries & Transporte</h3>
-                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s3Desc">
-                    Transporte y entrega de materiales de construcción (drywall, madera, pintura, azulejos) directamente a tu casa u obra.
-                </p>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s3Desc">Transporte y entrega de materiales de construcción (drywall, madera, pintura, azulejos) directamente a tu casa u obra.</p>
                 <ul class="text-xs text-slate-500 space-y-1">
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Entrega puntual en sitio</li>
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Carga y descarga segura</li>
@@ -247,9 +251,7 @@
                     <i class="fa-solid fa-broom"></i>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s4Title">Limpiezas de Todo Tipo</h3>
-                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s4Desc">
-                    Servicios de limpieza profunda post-construcción, residencias, locales comerciales y mantenimiento continuo.
-                </p>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s4Desc">Servicios de limpieza profunda post-construcción, residencias, locales comerciales y mantenimiento continuo.</p>
                 <ul class="text-xs text-slate-500 space-y-1">
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Limpieza fina post-obra</li>
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Residencial y comercial</li>
@@ -262,9 +264,7 @@
                     <i class="fa-solid fa-paint-roller"></i>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s5Title">Pintura Interior y Exterior</h3>
-                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s5Desc">
-                    Preparación cuidadosa de superficies, sellado y aplicación de pintura de alta resistencia.
-                </p>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s5Desc">Preparación cuidadosa de superficies, sellado y aplicación de pintura de alta resistencia.</p>
                 <ul class="text-xs text-slate-500 space-y-1">
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Acabados de lujo</li>
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Pintura de gabinetes y molduras</li>
@@ -277,9 +277,7 @@
                     <i class="fa-solid fa-hammer"></i>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s6Title">Reparación de Drywall</h3>
-                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s6Desc">
-                    Instalación completa de láminas, parches de grietas o agujeros y texturizado profesional (Knockdown, Orange Peel).
-                </p>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s6Desc">Instalación completa de láminas, parches de grietas o agujeros y texturizado profesional (Knockdown, Orange Peel).</p>
                 <ul class="text-xs text-slate-500 space-y-1">
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Parches invisibles</li>
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Reparación de techos</li>
@@ -292,9 +290,7 @@
                     <i class="fa-solid fa-bath"></i>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s7Title">Remodelación Baños y Cocinas</h3>
-                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s7Desc">
-                    Transformación total: cambio de duchas, vanities, instalación de azulejos, gabinetes y grifería.
-                </p>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s7Desc">Transformación total: cambio de duchas, vanities, instalación de azulejos, gabinetes y grifería.</p>
                 <ul class="text-xs text-slate-500 space-y-1">
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Azulejos y porcelanato</li>
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Diseños modernos</li>
@@ -307,19 +303,16 @@
                     <i class="fa-solid fa-border-all"></i>
                 </div>
                 <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s8Title">Instalación de Pisos</h3>
-                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s8Desc">
-                    Instalación de pisos de vinilo LVP a prueba de agua, laminados, baldosas y baseboards con acabados limpios.
-                </p>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s8Desc">Instalación de pisos de vinilo LVP a prueba de agua, laminados, baldosas y baseboards con acabados limpios.</p>
                 <ul class="text-xs text-slate-500 space-y-1">
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Pisos LVP 100% impermeables</li>
                     <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Instalación de Baseboards</li>
                 </ul>
             </div>
-
         </div>
     </section>
 
-    <!-- Galería con Imágenes de Trabajos -->
+    <!-- Galería con Imágenes Estables Garantizadas -->
     <section id="proyectos" class="bg-slate-900 py-20 text-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -330,9 +323,10 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Foto 1: Remodelación -->
                 <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" alt="Remodelación" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-slate-900/80 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30" data-i18n="g1Tag">Remodelación</span>
+                    <div class="relative h-64 bg-slate-700 flex items-center justify-center">
+                        <!-- Imagen Garantizada (Puedes cambiar el src por la URL real de tu foto) -->
+                        <img src="https://placehold.co/600x400/1e293b/f59e0b?text=Remodelacion+%26+Demolicion" alt="Remodelación" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-slate-900/90 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30" data-i18n="g1Tag">Remodelación</span>
                     </div>
                     <div class="p-6">
                         <h4 class="font-bold text-lg mb-1" data-i18n="g1Title">Remodelación & Demolición</h4>
@@ -342,9 +336,10 @@
 
                 <!-- Foto 2: Pintura y Drywall -->
                 <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=800&auto=format&fit=crop" alt="Pintura" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-slate-900/80 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30" data-i18n="g2Tag">Pintura y Drywall</span>
+                    <div class="relative h-64 bg-slate-700 flex items-center justify-center">
+                        <!-- Imagen Garantizada (Puedes cambiar el src por la URL real de tu foto) -->
+                        <img src="https://placehold.co/600x400/1e293b/f59e0b?text=Pintura+%26+Drywall" alt="Pintura" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-slate-900/90 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30" data-i18n="g2Tag">Pintura y Drywall</span>
                     </div>
                     <div class="p-6">
                         <h4 class="font-bold text-lg mb-1" data-i18n="g2Title">Restauración e Interiores</h4>
@@ -354,9 +349,10 @@
 
                 <!-- Foto 3: Limpieza y Desalojo -->
                 <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-xl">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" alt="Limpieza y Desalojo" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-slate-900/80 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30" data-i18n="g3Tag">Limpieza & Recolección</span>
+                    <div class="relative h-64 bg-slate-700 flex items-center justify-center">
+                        <!-- Imagen Garantizada (Puedes cambiar el src por la URL real de tu foto) -->
+                        <img src="https://placehold.co/600x400/1e293b/f59e0b?text=Limpieza+%26+Escombros" alt="Limpieza" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-slate-900/90 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30" data-i18n="g3Tag">Limpieza & Recolección</span>
                     </div>
                     <div class="p-6">
                         <h4 class="font-bold text-lg mb-1" data-i18n="g3Title">Limpieza y Retiro de Escombros</h4>
@@ -367,7 +363,7 @@
         </div>
     </section>
 
-    <!-- Por Qué Elegirnos con Imagen del Constructor -->
+    <!-- Por Qué Elegirnos -->
     <section id="nosotros" class="py-20 bg-amber-50 border-y border-amber-100">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -382,7 +378,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 text-lg" data-i18n="a1Title">Respuesta Rápida y Envíos a Tiempo</h4>
-                                <p class="text-slate-600 text-sm" data-i18n="a1Desc">Ya sea para transporte de materiales, recolección de basura o inicio de obra, cumplimos con los horarios strictly.</p>
+                                <p class="text-slate-600 text-sm" data-i18n="a1Desc">Ya sea para transporte de materiales, recolección de basura o inicio de obra, cumplimos con los horarios estrictamente.</p>
                             </div>
                         </div>
 
@@ -408,9 +404,9 @@
                     </div>
                 </div>
 
-                <!-- Foto de la Persona / Constructor Trabajando -->
+                <!-- Foto Lateral Confiable -->
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop" alt="Servicios del hogar y construcción" class="rounded-2xl shadow-2xl border-4 border-white object-cover w-full h-[450px]">
+                    <img src="https://placehold.co/600x500/0f172a/f59e0b?text=D+Roman+House+Solution+LLC" alt="D Roman House Solution LLC" class="rounded-2xl shadow-2xl border-4 border-white object-cover w-full h-[450px]">
                     <div class="absolute -bottom-6 -left-6 bg-slate-900 text-white p-6 rounded-2xl shadow-xl max-w-xs hidden sm:block">
                         <p class="text-amber-400 font-bold text-lg mb-1" data-i18n="badgeTitle">¡Satisfacción 100%!</p>
                         <p class="text-xs text-slate-300" data-i18n="badgeDesc">Entregamos resultados limpios, seguros y de máxima durabilidad.</p>
@@ -467,7 +463,7 @@
         </a>
     </div>
 
-    <!-- Script de Traducción Dinámica ES/EN -->
+    <!-- Script de Traducción Dinámica -->
     <script>
         const translations = {
             es: {
@@ -657,7 +653,5 @@
             }
         }
     </script>
-
 </body>
 </html>
-
