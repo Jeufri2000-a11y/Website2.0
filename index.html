@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D Roman House Solution LLC | Remodelación Profesional en Florida</title>
+    <title>D Roman House Solution LLC | Remodelación & Servicios Generales</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
@@ -43,9 +43,9 @@
 
     <!-- Top Banner Informativo -->
     <div class="bg-amber-500 text-slate-900 text-xs md:text-sm font-semibold py-2 px-4 text-center flex justify-center items-center gap-4">
-        <span><i class="fa-solid fa-shield-halved mr-1"></i> Licenciados & Asegurados en Florida</span>
+        <span data-i18n="topBanner1"><i class="fa-solid fa-shield-halved mr-1"></i> Licenciados & Asegurados en Florida</span>
         <span class="hidden md:inline">•</span>
-        <span class="hidden md:inline"><i class="fa-solid fa-clock mr-1"></i> Atendemos Emergencias y Citas el Mismo Día</span>
+        <span class="hidden md:inline" data-i18n="topBanner2"><i class="fa-solid fa-clock mr-1"></i> Atendemos Emergencias y Citas el Mismo Día</span>
     </div>
 
     <!-- Navegación Principal -->
@@ -62,19 +62,27 @@
             </a>
 
             <nav class="hidden lg:flex items-center space-x-8 font-semibold text-sm">
-                <a href="#servicios" class="hover:text-amber-400 transition-colors">Servicios</a>
-                <a href="#proyectos" class="hover:text-amber-400 transition-colors">Proyectos</a>
-                <a href="#nosotros" class="hover:text-amber-400 transition-colors">¿Por qué Elegirnos?</a>
-                <a href="#cobertura" class="hover:text-amber-400 transition-colors">Áreas</a>
+                <a href="#servicios" class="hover:text-amber-400 transition-colors" data-i18n="navServices">Servicios</a>
+                <a href="#proyectos" class="hover:text-amber-400 transition-colors" data-i18n="navProjects">Proyectos</a>
+                <a href="#nosotros" class="hover:text-amber-400 transition-colors" data-i18n="navAbout">¿Por qué Elegirnos?</a>
+                <a href="#cobertura" class="hover:text-amber-400 transition-colors" data-i18n="navContact">Contacto</a>
             </nav>
 
-            <div class="hidden md:flex items-center gap-4">
-                <a href="https://wa.me/18132396896" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2.5 rounded-xl transition shadow-lg flex items-center gap-2 text-sm">
-                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
-                </a>
-                <a href="tel:18132396896" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-5 py-2.5 rounded-xl transition shadow-lg flex items-center gap-2 text-sm">
-                    <i class="fa-solid fa-phone"></i> +1 (813) 239-6896
-                </a>
+            <div class="flex items-center gap-3">
+                <!-- Botón de Cambio de Idioma -->
+                <div class="bg-slate-800 border border-slate-700 rounded-xl p-1 flex items-center text-xs font-bold">
+                    <button id="btn-es" onclick="switchLang('es')" class="px-2.5 py-1 rounded-lg bg-amber-500 text-slate-900 transition">ES</button>
+                    <button id="btn-en" onclick="switchLang('en')" class="px-2.5 py-1 rounded-lg text-slate-400 hover:text-white transition">EN</button>
+                </div>
+
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="https://wa.me/18132396896" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2.5 rounded-xl transition shadow-lg flex items-center gap-2 text-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                    </a>
+                    <a href="tel:18132396896" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-5 py-2.5 rounded-xl transition shadow-lg flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-phone"></i> +1 (813) 239-6896
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -86,21 +94,21 @@
 
         <div class="max-w-7xl mx-auto relative z-10 grid md:grid-cols-12 gap-12 items-center">
             <div class="md:col-span-7 text-center md:text-left">
-                <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
-                    <i class="fa-solid fa-star text-amber-400"></i> Servicio de Remodelación #1 Local
+                <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-6" data-i18n="heroTag">
+                    <i class="fa-solid fa-star text-amber-400"></i> Soluciones Integrales para el Hogar y Comercio
                 </div>
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                    Especialistas en <span class="text-amber-400">Remodelación, Pintura</span> y Drywall.
+                    <span class="text-amber-400" data-i18n="heroTitle1">Remodelación, Demolición</span> <span data-i18n="heroTitle2">& Servicios Generales.</span>
                 </h1>
-                <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl">
-                    Ofrecemos acabados de alta calidad para residencias y comercios. Arreglos rápidos, transformaciones completas y mano de obra garantizada por escrito.
+                <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl" data-i18n="heroDesc">
+                    Pintura, Drywall, Restauración, Recolección de Basura/Escombros, Limpieza de Todo Tipo y Deliveries de Materiales. Mano de obra rápida y garantizada.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
-                    <a href="#cotizacion" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-extrabold text-lg px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition transform flex items-center justify-center gap-3">
-                        <i class="fa-solid fa-calculator"></i> Obtener Cotización Gratis
+                    <a href="#cotizacion" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-extrabold text-lg px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition transform flex items-center justify-center gap-3" data-i18n="heroBtnQuote">
+                        <i class="fa-solid fa-calculator"></i> Cotización Profesional Gratis
                     </a>
-                    <a href="tel:18132396896" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold text-lg px-8 py-4 rounded-xl transition flex items-center justify-center gap-3">
+                    <a href="tel:18132396896" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold text-lg px-8 py-4 rounded-xl transition flex items-center justify-center gap-3" data-i18n="heroBtnCall">
                         <i class="fa-solid fa-phone text-amber-400"></i> Llamar Directo
                     </a>
                 </div>
@@ -108,49 +116,69 @@
                 <!-- Métricas Rápidas -->
                 <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
                     <div>
-                        <span class="block text-2xl lg:text-3xl font-black text-amber-400">+10 Años</span>
-                        <span class="text-xs text-slate-400">De Experiencia</span>
+                        <span class="block text-2xl lg:text-3xl font-black text-amber-400" data-i18n="stat1Val">+10 Años</span>
+                        <span class="text-xs text-slate-400" data-i18n="stat1Lbl">De Experiencia</span>
                     </div>
                     <div>
                         <span class="block text-2xl lg:text-3xl font-black text-amber-400">100%</span>
-                        <span class="text-xs text-slate-400">Garantizados</span>
+                        <span class="text-xs text-slate-400" data-i18n="stat2Lbl">Garantizados</span>
                     </div>
                     <div>
                         <span class="block text-2xl lg:text-3xl font-black text-amber-400">5.0 ★</span>
-                        <span class="text-xs text-slate-400">Satisfacción Cliente</span>
+                        <span class="text-xs text-slate-400" data-i18n="stat3Lbl">Satisfacción Cliente</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Formulario Rápido Hero (Desktop) -->
+            <!-- Formulario Conectado a Formspree -->
             <div id="cotizacion" class="md:col-span-5 bg-white text-slate-900 p-8 rounded-2xl shadow-2xl border border-slate-100">
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">Solicita Tu Estimado</h3>
-                <p class="text-xs text-slate-500 mb-6">Respuesta rápida en menos de 2 horas laborables.</p>
+                <h3 class="text-2xl font-bold text-slate-900 mb-1" data-i18n="formTitle">Solicitud de Presupuesto</h3>
+                <p class="text-xs text-slate-500 mb-6" data-i18n="formSub">Recibirás una confirmación por correo y llamada de nuestro equipo.</p>
                 
-                <form action="https://formspree.io/f/xbjnqpyw" method="POST" class="space-y-4">
+                <form action="https://formspree.io/f/myezkevn" method="POST" class="space-y-4">
+                    <input type="hidden" name="_subject" value="Nueva Solicitud de Cotización - D Roman House Solution LLC">
+                    
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Nombre Completo</label>
-                        <input type="text" name="nombre" placeholder="Ej. Juan Pérez" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition">
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" data-i18n="labelName">Nombre Completo *</label>
+                        <input type="text" name="Nombre_Cliente" placeholder="Ej. Juan Pérez" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition text-sm">
                     </div>
-                    <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Teléfono Móvil</label>
-                        <input type="tel" name="telefono" placeholder="+1 (813) 239-6896" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" data-i18n="labelPhone">Teléfono Móvil *</label>
+                            <input type="tel" name="Telefono" placeholder="(813) 000-0000" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" data-i18n="labelEmail">Correo Electrónico *</label>
+                            <input type="email" name="email" placeholder="cliente@email.com" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition text-sm">
+                        </div>
                     </div>
+
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Servicio Requerido</label>
-                        <select name="servicio" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition text-slate-700">
-                            <option value="pintura">Pintura (Interior / Exterior)</option>
-                            <option value="drywall">Reparación de Drywall / Parches</option>
-                            <option value="remodelacion">Remodelación de Baño / Cocina</option>
-                            <option value="pisos">Instalación de Pisos / Azulejos</option>
-                            <option value="mantenimiento">Mantenimiento General / Varios</option>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" data-i18n="labelService">Servicio Requerido *</label>
+                        <select name="Servicio_Solicitado" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition text-slate-700 text-sm">
+                            <option value="Demolición y Restauración" data-i18n="opt1">Demolición y Restauración</option>
+                            <option value="Recolección de Basura y Escombros" data-i18n="opt2">Recolección de Basura / Escombros</option>
+                            <option value="Servicio de Deliveries y Transporte" data-i18n="opt3">Deliveries / Transporte de Materiales</option>
+                            <option value="Limpieza General Post-Construcción" data-i18n="opt4">Limpieza General / Todo Tipo</option>
+                            <option value="Pintura Interior y Exterior" data-i18n="opt5">Pintura (Interior / Exterior)</option>
+                            <option value="Reparación de Drywall" data-i18n="opt6">Reparación de Drywall / Parches</option>
+                            <option value="Remodelación de Baños y Cocinas" data-i18n="opt7">Remodelación de Baño / Cocina</option>
+                            <option value="Otros Servicios" data-i18n="opt8">Otro / Mantenimiento General</option>
                         </select>
                     </div>
+
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Detalles del Trabajo</label>
-                        <textarea name="mensaje" rows="3" placeholder="Describe brevemente lo que necesitas reparar o remodelar..." required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition"></textarea>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" data-i18n="labelLocation">Dirección del Proyecto / Ciudad</label>
+                        <input type="text" name="Ubicacion_Proyecto" placeholder="Ej. Tampa, FL" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition text-sm">
                     </div>
-                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-900 font-extrabold py-4 rounded-xl shadow-lg transition transform active:scale-95">
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1" data-i18n="labelDetails">Detalles del Trabajo *</label>
+                        <textarea name="Detalles_Del_Trabajo" rows="3" placeholder="Describe brevemente lo que necesitas..." required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none transition text-sm"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-900 font-extrabold py-3.5 rounded-xl shadow-lg transition transform active:scale-95 text-sm uppercase tracking-wider" data-i18n="btnSubmit">
                         ENVIAR MI SOLICITUD AHORA <i class="fa-solid fa-paper-plane ml-2"></i>
                     </button>
                 </form>
@@ -161,214 +189,106 @@
     <!-- Sección de Servicios Detallados -->
     <section id="servicios" class="py-20 max-w-7xl mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-amber-600 font-bold text-sm tracking-widest uppercase">Lo Que Hacemos</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2">Soluciones Integrales para Tu Propiedad</h2>
-            <p class="text-slate-600 mt-4">Nos encargamos desde pequeñas reparaciones residenciales hasta proyectos de renovación completa.</p>
+            <span class="text-amber-600 font-bold text-sm tracking-widest uppercase" data-i18n="secServicesSub">Nuestros Servicios completos</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2" data-i18n="secServicesTitle">Soluciones Profesionales para Todo Tipo de Proyecto</h2>
+            <p class="text-slate-600 mt-4" data-i18n="secServicesDesc">Desde la preparación y demolición inicial hasta el acabado final, limpieza profunda y transporte.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Servicio 1 -->
-            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+                    <i class="fa-solid fa-person-digging"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s1Title">Demolición y Restauración</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s1Desc">
+                    Demolición segura de interiores, remoción de gabinetes, pisos, azulejos y estructuras para preparar tus espacios antes de remodelar.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+                    <i class="fa-solid fa-dumpster"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s2Title">Recolección de Basura & Escombros</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s2Desc">
+                    Retiro rápido y profesional de desechos de construcción, basura pesada, muebles viejos y restos de obra.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+                    <i class="fa-solid fa-truck-ramp-box"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s3Title">Deliveries & Transporte</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s3Desc">
+                    Transporte y entrega de materiales de construcción (drywall, madera, pintura, azulejos) directamente a tu casa u obra.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+                    <i class="fa-solid fa-broom"></i>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s4Title">Limpiezas de Todo Tipo</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s4Desc">
+                    Servicios de limpieza profunda post-construcción, residencias, locales comerciales y mantenimiento continuo.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
                     <i class="fa-solid fa-paint-roller"></i>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Pintura Interior y Exterior</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                    Preparación cuidadosa de paredes, sellado de grietas y aplicación de pinturas de alta durabilidad contra la humedad y el sol de Florida.
+                <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s5Title">Pintura Interior y Exterior</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s5Desc">
+                    Preparación cuidadosa de superficies, sellado y aplicación de pintura de alta resistencia.
                 </p>
-                <ul class="text-xs text-slate-500 space-y-2 mb-6">
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Remoción de pintura previa</li>
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Pintura de gabinete y molduras</li>
-                </ul>
             </div>
 
-            <!-- Servicio 2 -->
-            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
                     <i class="fa-solid fa-hammer"></i>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Reparación de Drywall</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                    Reparación de hoyos, daños por agua, instalación de láminas nuevas y texturizado profesional (Orange Peel, Knockdown).
+                <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s6Title">Reparación de Drywall</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s6Desc">
+                    Instalación completa de láminas, parches de grietas o agujeros y texturizado profesional (Knockdown, Orange Peel).
                 </p>
-                <ul class="text-xs text-slate-500 space-y-2 mb-6">
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Parches invisibles</li>
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Reparación de techos dañados</li>
-                </ul>
             </div>
 
-            <!-- Servicio 3 -->
-            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
                     <i class="fa-solid fa-bath"></i>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Remodelación de Baños</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                    Modernización completa: cambio de duchas, azulejos, vanity, grifería e impermeabilización profesional.
+                <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s7Title">Remodelación Baños y Cocinas</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s7Desc">
+                    Transformación total: cambio de duchas, vanities, instalación de azulejos, gabinetes y grifería.
                 </p>
-                <ul class="text-xs text-slate-500 space-y-2 mb-6">
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Instalación de azulejos y cerámica</li>
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Instalaciones de plomería básicas</li>
-                </ul>
             </div>
 
-            <!-- Servicio 4 -->
-            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-4 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
                     <i class="fa-solid fa-border-all"></i>
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Instalación de Pisos</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                    Instalación experta de pisos de vinilo LVP, laminados, porcelanato y zócalos (baseboards).
+                <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="s8Title">Instalación de Pisos</h3>
+                <p class="text-slate-600 text-xs leading-relaxed mb-4" data-i18n="s8Desc">
+                    Instalación de pisos de vinilo LVP a prueba de agua, laminados, baldosas y baseboards con acabados limpios.
                 </p>
-                <ul class="text-xs text-slate-500 space-y-2 mb-6">
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Nivelación de superficies</li>
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Pisos 100% a prueba de agua</li>
-                </ul>
             </div>
 
-            <!-- Servicio 5 -->
-            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
-                    <i class="fa-solid fa-utensils"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Remodelación de Cocinas</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                    Renovación de gabinetes, instalación de backsplashes de azulejo y mejoras estéticas generales.
-                </p>
-                <ul class="text-xs text-slate-500 space-y-2 mb-6">
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Instalación de Backsplash</li>
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Pintura de gabinetes existentes</li>
-                </ul>
-            </div>
-
-            <!-- Servicio 6 -->
-            <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition group">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Mantenimiento General</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                    Handyman y reparaciones múltiples para el hogar: puertas, cerraduras, retoques y pequeñas instalaciones.
-                </p>
-                <ul class="text-xs text-slate-500 space-y-2 mb-6">
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Atención a detalles pequeños</li>
-                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Soluciones rápidas y limpias</li>
-                </ul>
-            </div>
         </div>
     </section>
 
-    <!-- Galería Antes y Después -->
-    <section id="proyectos" class="bg-slate-900 py-20 text-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-amber-400 font-bold text-sm tracking-widest uppercase">Galería de Trabajos</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold mt-2">Resultados Impecables que Hablan por Sí Mismos</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Proyecto 1 -->
-                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" alt="Remodelación de Baño" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-slate-900/80 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30">Baños</span>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-lg mb-1">Remodelación Completa de Baño</h4>
-                        <p class="text-slate-400 text-xs">Instalación de piso a techo de azulejos y cambio completo de fixtures.</p>
-                    </div>
-                </div>
-
-                <!-- Proyecto 2 -->
-                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=800&auto=format&fit=crop" alt="Pintura de Interiores" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-slate-900/80 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30">Pintura</span>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-lg mb-1">Pintura y Reparación de Drywall</h4>
-                        <p class="text-slate-400 text-xs">Acabado satinado moderno con reparación de grietas estructurales ligeras.</p>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" alt="Instalación de Pisos" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-slate-900/80 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-400/30">Pisos</span>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-lg mb-1">Instalación de Piso de Vinilo (LVP)</h4>
-                        <p class="text-slate-400 text-xs">Reemplazo de alfombra por piso LVP resistente al agua en toda la propiedad.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Por Qué Elegirnos -->
-    <section id="nosotros" class="py-20 bg-amber-50 border-y border-amber-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="text-amber-600 font-bold text-sm tracking-widest uppercase">Garantía D Roman</span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-2 mb-6">Trabajamos en tu Casa con la Misma Dedicación que en la Nuestra</h2>
-                    
-                    <div class="space-y-6">
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-amber-500 text-slate-900 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
-                                <i class="fa-solid fa-handshake"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-lg">Precios Claros sin Sorpresas</h4>
-                                <p class="text-slate-600 text-sm">Entregamos presupuestos detallados por escrito antes de empezar. Lo que cotizamos es lo que pagas.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-amber-500 text-slate-900 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
-                                <i class="fa-solid fa-broom"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-lg">Limpieza Post-Trabajo Garantizada</h4>
-                                <p class="text-slate-600 text-sm">Protegemos tus muebles, pisos y pertenencias. Al terminar, dejamos tu casa perfectamente limpia.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 bg-amber-500 text-slate-900 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
-                                <i class="fa-solid fa-certificate"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 text-lg">Responsabilidad y Puntualidad</h4>
-                                <p class="text-slate-600 text-sm">Llegamos a la hora acordada y cumplimos con los plazos establecidos para tu tranquilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" alt="Contractor trabajando" class="rounded-2xl shadow-2xl border-4 border-white">
-                    <div class="absolute -bottom-6 -left-6 bg-slate-900 text-white p-6 rounded-2xl shadow-xl max-w-xs hidden sm:block">
-                        <p class="text-amber-400 font-bold text-lg mb-1">¡Satisfacción 100%!</p>
-                        <p class="text-xs text-slate-300">No consideramos terminado el trabajo hasta que no estés completamente conforme.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Footer / Contacto -->
     <footer id="cobertura" class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
                 <span class="text-xl font-extrabold text-white block mb-2">D ROMAN HOUSE SOLUTION LLC</span>
-                <p class="text-sm text-slate-400 mb-4">Servicios profesionales de remodelación, pintura y mantenimiento para propiedades residenciales y comerciales.</p>
-                <p class="text-xs text-slate-500">&copy; 2026 D Roman House Solution LLC. Todos los derechos reservados.</p>
+                <p class="text-sm text-slate-400 mb-4" data-i18n="footerDesc">Especialistas en remodelación, demolición, recolección de basura, deliveries y limpiezas de todo tipo en Florida.</p>
+                <p class="text-xs text-slate-500">&copy; 2026 D Roman House Solution LLC.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4">Contacto Directo</h4>
+                <h4 class="text-white font-bold mb-4" data-i18n="footerContact">Contacto Directo</h4>
                 <ul class="space-y-3 text-sm">
                     <li>
                         <a href="tel:18132396896" class="hover:text-amber-400 transition flex items-center gap-2">
@@ -383,15 +303,15 @@
                     <li>
                         <div class="flex items-start gap-2">
                             <i class="fa-solid fa-location-dot text-amber-500 mt-1"></i>
-                            <span>Cobertura en Tampa, Fort Myers, Cape Coral y zonas aledañas en Florida.</span>
+                            <span data-i18n="footerArea">Atención en Tampa, Fort Myers, Cape Coral y áreas cercanas en Florida.</span>
                         </div>
                     </li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4">Horario de Atención</h4>
-                <p class="text-sm">Lunes a Sábado: 7:00 AM - 7:00 PM</p>
-                <p class="text-sm text-amber-500 font-semibold mt-2">Atención de Emergencias Disponible</p>
+                <h4 class="text-white font-bold mb-4" data-i18n="footerHoursTitle">Horario de Atención</h4>
+                <p class="text-sm" data-i18n="footerHours">Lunes a Sábado: 7:00 AM - 7:00 PM</p>
+                <p class="text-sm text-amber-500 font-semibold mt-2" data-i18n="footerEmergencies">Atención de Emergencias & Citas Rápida</p>
             </div>
         </div>
     </footer>
@@ -402,9 +322,158 @@
             <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
         </a>
         <a href="tel:18132396896" class="flex-1 bg-amber-500 active:bg-amber-600 text-slate-900 font-extrabold py-3 rounded-xl flex items-center justify-center gap-2 text-sm">
-            <i class="fa-solid fa-phone"></i> Llamar
+            <i class="fa-solid fa-phone"></i> <span data-i18n="btnCallMobile">Llamar</span>
         </a>
     </div>
+
+    <!-- Script de Traducción Dinámica -->
+    <script>
+        const translations = {
+            es: {
+                topBanner1: '<i class="fa-solid fa-shield-halved mr-1"></i> Licenciados & Asegurados en Florida',
+                topBanner2: '<i class="fa-solid fa-clock mr-1"></i> Atendemos Emergencias y Citas el Mismo Día',
+                navServices: 'Servicios',
+                navProjects: 'Proyectos',
+                navAbout: '¿Por qué Elegirnos?',
+                navContact: 'Contacto',
+                heroTag: '<i class="fa-solid fa-star text-amber-400"></i> Soluciones Integrales para el Hogar y Comercio',
+                heroTitle1: 'Remodelación, Demolición',
+                heroTitle2: '& Servicios Generales.',
+                heroDesc: 'Pintura, Drywall, Restauración, Recolección de Basura/Escombros, Limpieza de Todo Tipo y Deliveries de Materiales. Mano de obra rápida y garantizada.',
+                heroBtnQuote: '<i class="fa-solid fa-calculator"></i> Cotización Profesional Gratis',
+                heroBtnCall: '<i class="fa-solid fa-phone text-amber-400"></i> Llamar Directo',
+                stat1Val: '+10 Años',
+                stat1Lbl: 'De Experiencia',
+                stat2Lbl: 'Garantizados',
+                stat3Lbl: 'Satisfacción Cliente',
+                formTitle: 'Solicitud de Presupuesto',
+                formSub: 'Recibirás una confirmación por correo y llamada de nuestro equipo.',
+                labelName: 'Nombre Completo *',
+                labelPhone: 'Teléfono Móvil *',
+                labelEmail: 'Correo Electrónico *',
+                labelService: 'Servicio Requerido *',
+                opt1: 'Demolición y Restauración',
+                opt2: 'Recolección de Basura / Escombros',
+                opt3: 'Deliveries / Transporte de Materiales',
+                opt4: 'Limpieza General / Todo Tipo',
+                opt5: 'Pintura (Interior / Exterior)',
+                opt6: 'Reparación de Drywall / Parches',
+                opt7: 'Remodelación de Baño / Cocina',
+                opt8: 'Otro / Mantenimiento General',
+                labelLocation: 'Dirección del Proyecto / Ciudad',
+                labelDetails: 'Detalles del Trabajo *',
+                btnSubmit: 'ENVIAR MI SOLICITUD AHORA <i class="fa-solid fa-paper-plane ml-2"></i>',
+                secServicesSub: 'Nuestros Servicios completos',
+                secServicesTitle: 'Soluciones Profesionales para Todo Tipo de Proyecto',
+                secServicesDesc: 'Desde la preparación y demolición inicial hasta el acabado final, limpieza profunda y transporte.',
+                s1Title: 'Demolición y Restauración',
+                s1Desc: 'Demolición segura de interiores, remoción de gabinetes, pisos, azulejos y estructuras para preparar tus espacios antes de remodelar.',
+                s2Title: 'Recolección de Basura & Escombros',
+                s2Desc: 'Retiro rápido y profesional de desechos de construcción, basura pesada, muebles viejos y restos de obra.',
+                s3Title: 'Deliveries & Transporte',
+                s3Desc: 'Transporte y entrega de materiales de construcción (drywall, madera, pintura, azulejos) directamente a tu casa u obra.',
+                s4Title: 'Limpiezas de Todo Tipo',
+                s4Desc: 'Servicios de limpieza profunda post-construcción, residencias, locales comerciales y mantenimiento continuo.',
+                s5Title: 'Pintura Interior y Exterior',
+                s5Desc: 'Preparación cuidadosa de superficies, sellado y aplicación de pintura de alta resistencia.',
+                s6Title: 'Reparación de Drywall',
+                s6Desc: 'Instalación completa de láminas, parches de grietas o agujeros y texturizado profesional (Knockdown, Orange Peel).',
+                s7Title: 'Remodelación Baños y Cocinas',
+                s7Desc: 'Transformación total: cambio de duchas, vanities, instalación de azulejos, gabinetes y grifería.',
+                s8Title: 'Instalación de Pisos',
+                s8Desc: 'Instalación de pisos de vinilo LVP a prueba de agua, laminados, baldosas y baseboards con acabados limpios.',
+                footerDesc: 'Especialistas en remodelación, demolición, recolección de basura, deliveries y limpiezas de todo tipo en Florida.',
+                footerContact: 'Contacto Directo',
+                footerArea: 'Atención en Tampa, Fort Myers, Cape Coral y áreas cercanas en Florida.',
+                footerHoursTitle: 'Horario de Atención',
+                footerHours: 'Lunes a Sábado: 7:00 AM - 7:00 PM',
+                footerEmergencies: 'Atención de Emergencias & Citas Rápida',
+                btnCallMobile: 'Llamar'
+            },
+            en: {
+                topBanner1: '<i class="fa-solid fa-shield-halved mr-1"></i> Licensed & Insured in Florida',
+                topBanner2: '<i class="fa-solid fa-clock mr-1"></i> Same-Day Emergency & Appointment Support',
+                navServices: 'Services',
+                navProjects: 'Projects',
+                navAbout: 'Why Choose Us?',
+                navContact: 'Contact',
+                heroTag: '<i class="fa-solid fa-star text-amber-400"></i> Complete Residential & Commercial Solutions',
+                heroTitle1: 'Remodeling, Demolition',
+                heroTitle2: '& General Services.',
+                heroDesc: 'Painting, Drywall, Restoration, Junk/Debris Removal, All Types of Cleaning, and Material Deliveries. Fast & Guaranteed Work.',
+                heroBtnQuote: '<i class="fa-solid fa-calculator"></i> Free Professional Quote',
+                heroBtnCall: '<i class="fa-solid fa-phone text-amber-400"></i> Call Directly',
+                stat1Val: '+10 Years',
+                stat1Lbl: 'Experience',
+                stat2Lbl: 'Guaranteed Work',
+                stat3Lbl: 'Client Satisfaction',
+                formTitle: 'Request a Quote',
+                formSub: 'You will receive email confirmation and a call from our team.',
+                labelName: 'Full Name *',
+                labelPhone: 'Mobile Phone *',
+                labelEmail: 'Email Address *',
+                labelService: 'Required Service *',
+                opt1: 'Demolition & Restoration',
+                opt2: 'Junk & Debris Removal',
+                opt3: 'Material Delivery & Transport',
+                opt4: 'General / Post-Construction Cleaning',
+                opt5: 'Painting (Interior / Exterior)',
+                opt6: 'Drywall Repair & Patching',
+                opt7: 'Bathroom & Kitchen Remodeling',
+                opt8: 'Other / General Maintenance',
+                labelLocation: 'Project Address / City',
+                labelDetails: 'Project Details *',
+                btnSubmit: 'SEND MY REQUEST NOW <i class="fa-solid fa-paper-plane ml-2"></i>',
+                secServicesSub: 'Our Complete Services',
+                secServicesTitle: 'Professional Solutions for Every Project',
+                secServicesDesc: 'From initial site preparation and demolition to final finishes, deep cleaning, and material deliveries.',
+                s1Title: 'Demolition & Restoration',
+                s1Desc: 'Safe interior demolition, removal of cabinets, flooring, tiles, and structures to prepare your space for remodeling.',
+                s2Title: 'Junk & Debris Removal',
+                s2Desc: 'Fast and professional removal of construction waste, heavy junk, old furniture, and job site debris.',
+                s3Title: 'Material Delivery & Transport',
+                s3Desc: 'Transport and delivery of construction materials (drywall, lumber, paint, tiles) directly to your home or job site.',
+                s4Title: 'All Types of Cleaning',
+                s4Desc: 'Post-construction deep cleaning services for residences, commercial properties, and ongoing maintenance.',
+                s5Title: 'Interior & Exterior Painting',
+                s5Desc: 'Careful surface preparation, sealing, and application of high-durability, weather-resistant paint.',
+                s6Title: 'Drywall Repair & Patching',
+                s6Desc: 'Complete drywall sheet installation, crack/hole repairs, and professional texturing (Knockdown, Orange Peel).',
+                s7Title: 'Bathroom & Kitchen Remodeling',
+                s7Desc: 'Complete transformations: shower replacements, vanities, tile installation, cabinets, and fixture fitting.',
+                s8Title: 'Flooring Installation',
+                s8Desc: 'Installation of 100% waterproof LVP vinyl, laminate, tiles, and baseboards with clean finishes.',
+                footerDesc: 'Specialists in remodeling, demolition, junk removal, material deliveries, and professional cleaning in Florida.',
+                footerContact: 'Direct Contact',
+                footerArea: 'Serving Tampa, Fort Myers, Cape Coral, and surrounding areas in Florida.',
+                footerHoursTitle: 'Business Hours',
+                footerHours: 'Monday to Saturday: 7:00 AM - 7:00 PM',
+                footerEmergencies: 'Fast Emergency & Appointment Response',
+                btnCallMobile: 'Call'
+            }
+        };
+
+        function switchLang(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            const btnEs = document.getElementById('btn-es');
+            const btnEn = document.getElementById('btn-en');
+
+            if (lang === 'en') {
+                btnEn.className = 'px-2.5 py-1 rounded-lg bg-amber-500 text-slate-900 transition font-bold';
+                btnEs.className = 'px-2.5 py-1 rounded-lg text-slate-400 hover:text-white transition font-bold';
+            } else {
+                btnEs.className = 'px-2.5 py-1 rounded-lg bg-amber-500 text-slate-900 transition font-bold';
+                btnEn.className = 'px-2.5 py-1 rounded-lg text-slate-400 hover:text-white transition font-bold';
+            }
+        }
+    </script>
 
 </body>
 </html>
